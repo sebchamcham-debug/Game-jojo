@@ -1,0 +1,16 @@
+{
+  "name": "battle-royale-3d-multiplayer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Serveur WebSocket pour Battle Royale 3D, jusqu'à 20 joueurs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
