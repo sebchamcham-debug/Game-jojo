@@ -1,0 +1,34 @@
+BATTLE ROYALE 3D — MULTIJOUEUR EN LIGNE (prototype)
+
+FICHIERS
+- Battle Royale 3D Multijoueur.html : le jeu complet (modifié depuis ton fichier).
+- server.js : serveur HTTP + WebSocket, jusqu'à 20 connexions.
+- package.json : dépendance et commande de démarrage.
+
+IMPORTANT
+Le multijoueur nécessite que le jeu soit servi par le serveur. N'ouvre pas le HTML directement depuis Téléchargements : la connexion WebSocket ne fonctionnera pas depuis file://.
+Le serveur synchronise les positions, les pseudos et les dégâts entre joueurs. C'est un prototype jouable, pas encore un serveur compétitif anti-triche. Les bots IA sont désactivés dans ce mode.
+
+TEST LOCAL (ordinateur ou environnement Node.js)
+1. Mets les trois fichiers dans le même dossier.
+2. Installe Node.js 18 ou plus récent.
+3. Dans ce dossier, lance : npm install
+4. Puis : npm start
+5. Ouvre http://localhost:3000 dans un navigateur.
+6. Pour tester à deux, ouvre la même adresse dans deux navigateurs/appareils connectés au même réseau (pour le téléphone, remplace localhost par l'adresse IP locale de l'ordinateur).
+
+HÉBERGEMENT GRATUIT EN LIGNE (exemple : Render)
+1. Crée un dépôt GitHub et ajoute les trois fichiers ci-dessus.
+2. Sur Render, crée un nouveau service Web connecté à ce dépôt.
+3. Choisis l'environnement Node.
+4. Build command : npm install
+5. Start command : npm start
+6. Déploie et attends l'URL HTTPS fournie par Render.
+7. Ouvre cette URL sur Android et partage-la à tes amis. Tous doivent utiliser la même URL.
+8. Le serveur gratuit peut se mettre en veille et le premier démarrage peut être lent. Les offres gratuites et leurs limites peuvent changer.
+
+LIMITES DU PROTOTYPE
+- Une seule partie publique commune, sans salon privé ni code d'invitation.
+- Limite serveur de 20 connexions simultanées.
+- La détection des tirs est en partie calculée par le navigateur et ne constitue pas une protection anti-triche complète.
+- Si la connexion au serveur échoue, le jeu ne démarre pas en mode solo.
