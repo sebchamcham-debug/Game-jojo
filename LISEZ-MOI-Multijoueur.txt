@@ -32,3 +32,10 @@ LIMITES DU PROTOTYPE
 - Limite serveur de 20 connexions simultanées.
 - La détection des tirs est en partie calculée par le navigateur et ne constitue pas une protection anti-triche complète.
 - Si la connexion au serveur échoue, le jeu ne démarre pas en mode solo.
+
+SKINS
+-----
+Menu Paramètres > « Skin du personnage » : Ranger, Dragonhunter, Ninja (variantes de couleur)
+et Chasseuse (nouveau personnage 3D complet, armure Dragonhunter). Le skin choisi est
+mémorisé et visible par les autres joueurs. Pensez à relancer le serveur (node server.js)
+après la mise à jour : il doit connaître le nouveau skin « chasseuse ».
